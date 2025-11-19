@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home – ISR Scotland | International Student Guide</title>
+  <meta name="description" content="Everything international students need to study, live and thrive in Scotland – visa, housing, NHS, jobs, culture, arrival.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero { 
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), 
+                  url('assets/images/scotland.webp') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR (IDENTICAL TO ALL PAGES) -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">ISR Scotland</a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-blue-600 font-medium">Home</a>
+          <a href="visa.html" class="text-gray-700 hover:text-blue-600 font-medium">Visa</a>
+          <a href="accommodation.html" class="text-gray-700 hover:text-blue-600 font-medium">Accommodation</a>
+          <a href="healthcare.html" class="text-gray-700 hover:text-blue-600 font-medium">Healthcare</a>
+          <a href="jobs.html" class="text-gray-700 hover:text-blue-600 font-medium">Jobs</a>
+          <a href="culture.html" class="text-gray-700 hover:text-blue-600 font-medium">Culture</a>
+          <a href="arrival.html" class="text-gray-700 hover:text-blue-600 font-medium">Arrival</a>
+          <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-2 text-blue-600 bg-blue-50 font-medium">Home</a>
+      <a href="visa.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visa</a>
+      <a href="accommodation.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Accommodation</a>
+      <a href="healthcare.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Healthcare</a>
+      <a href="jobs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jobs</a>
+      <a href="culture.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Culture</a>
+      <a href="arrival.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Arrival</a>
+      <a href="faq.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FAQ</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero text-white py-32 text-center">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Welcome to <span class="text-blue-400">Scotland</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+        The <strong>only</strong> website that removes every headache for international students — 
+        from visa to flat to NHS to part-time job to free bus pass.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#guides" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg">
+          Explore All Guides
+        </a>
+        <a href="checklist.html" download class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg shadow-lg">
+          See the Full Checklist
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & PROBLEM-SOLUTION -->
+  <section class="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 text-blue-800">We Know the Struggle</h2>
+      <div class="grid md:grid-cols-3 gap-10 mb-12">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2">
+          <div class="text-5xl mb-4">Confused</div>
+          <h3 class="text-xl font-bold text-blue-700 mb-3">“Which visa do I need?”</h3>
+          <p class="text-gray-600">CAS, eVisa, IHS, financial proof — we break it down in 5 minutes.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2">
+          <div class="text-5xl mb-4">House</div>
+          <h3 class="text-xl font-bold text-blue-700 mb-3">“Where will I live?”</h3>
+          <p class="text-gray-600">University halls, private flats, homestay + scam-proof checklist.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-2">
+          <div class="text-5xl mb-4">Pound</div>
+          <h3 class="text-xl font-bold text-blue-700 mb-3">“I need money fast!”</h3>
+          <p class="text-gray-600">£12–£15/hr jobs that hire students within 48 hours.</p>
+        </div>
+      </div>
+      <p class="text-2xl font-semibold text-blue-900">
+        ISR Scotland = <span class="text-green-600">Zero stress. Zero scams. Zero wasted money.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- PAGE PREVIEWS (All 7 guides) -->
+  <section id="guides" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Everything You Need — One Click Away</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Visa -->
+        <a href="visa.html" class="group flex flex-col md:flex-row bg-gradient-to-b from-blue-50 to-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="md:w-5/12 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="UK Student visa" class="w-full h-64 md:h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-8 md:w-7/12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-blue-700 mb-3">Visa & Immigration</h3>
+            <p class="text-gray-600 mb-4">CAS → eVisa → IHS → biometrics → extension. Updated for 2025 rules.</p>
+            <span class="text-blue-600 font-semibold">Go to Visa Guide →</span>
+          </div>
+        </a>
+
+        <!-- Accommodation -->
+        <a href="accommodation.html" class="group flex flex-col md:flex-row bg-gradient-to-b from-green-50 to-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="md:w-5/12 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Student flat" class="w-full h-64 md:h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-8 md:w-7/12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-green-700 mb-3">Accommodation</h3>
+            <p class="text-gray-600 mb-4">University halls, private flats, homestay + 10-point scam checklist.</p>
+            <span class="text-green-600 font-semibold">Find Housing →</span>
+          </div>
+        </a>
+
+        <!-- Healthcare -->
+        <a href="healthcare.html" class="group flex flex-col md:flex-row bg-gradient-to-b from-teal-50 to-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="md:w-5/12 relative overflow-hidden">
+            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/ba40/live/56ed1800-581d-11f0-960d-e9f1088a89fe.jpg.webp" 
+                 alt="NHS Scotland" class="w-full h-64 md:h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-8 md:w-7/12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-teal-700 mb-3">Healthcare & NHS</h3>
+            <p class="text-gray-600 mb-4">Free GP, free prescriptions, A&E, mental health, dental.</p>
+            <span class="text-teal-600 font-semibold">Get NHS Guide →</span>
+          </div>
+        </a>
+
+        <!-- Jobs -->
+        <a href="jobs.html" class="group flex flex-col md:flex-row bg-gradient-to-b from-yellow-50 to-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="md:w-5/12 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Student working" class="w-full h-64 md:h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-8 md:w-7/12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-yellow-700 mb-3">Part-Time Jobs</h3>
+            <p class="text-gray-600 mb-4">£12–£15/hr jobs that hire students in 48h + CV template.</p>
+            <span class="text-yellow-600 font-semibold">Start Earning →</span>
+          </div>
+        </a>
+
+        <!-- Culture -->
+        <a href="culture.html" class="group flex flex-col md:flex-row bg-gradient-to-b from-purple-50 to-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="md:w-5/12 relative overflow-hidden">
+            <img src="assets/images/hogmanay.avif" 
+                 alt="Scottish culture" class="w-full h-64 md:h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-8 md:w-7/12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-purple-700 mb-3">Culture & Lifestyle</h3>
+            <p class="text-gray-600 mb-4">Weather, food, slang, events, free bus pass, discounts.</p>
+            <span class="text-purple-600 font-semibold">Feel at Home →</span>
+          </div>
+        </a>
+
+        <!-- Arrival -->
+        <a href="arrival.html" class="group flex flex-col md:flex-row bg-gradient-to-b from-red-50 to-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="md:w-5/12 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Edinburgh Airport" class="w-full h-64 md:h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-8 md:w-7/12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-red-700 mb-3">Arrival Checklist</h3>
+            <p class="text-gray-600 mb-4">Airport → SIM → BRP → police → bank → orientation.</p>
+            <span class="text-red-600 font-semibold">First 48 Hours →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-12">Students Love ISR Scotland</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <p class="italic text-lg mb-6">"Saved £1,200 on rent scams!"</p>
+          <p class="font-bold text-blue-600">— Priya, Mumbai</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <p class="italic text-lg mb-6">"Got NHS number in 2 days thanks to the guide."</p>
+          <p class="font-bold text-blue-600">— Carlos, Mexico</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <p class="italic text-lg mb-6">"£14/hr job on day 4!"</p>
+          <p class="font-bold text-blue-600">— Lina, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8">Ready to Start Your Scottish Adventure?</h2>
+      <p class="text-xl mb-10">Download the complete 42-page guide — updated November 2025</p>
+      <a href="assets/pdfs/isr-scotland-full-guide.pdf" download 
+         class="inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 px-10 py-5 rounded-lg font-bold text-xl shadow-2xl">
+        <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+See the full checklist      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-2xl font-bold mb-2">ISR Scotland</p>
+      <p class="mb-4">Made with love for every international student</p>
+      <p class="text-sm">© 2025 ISR Scotland – All rights reserved.</p>
+      <p class="text-sm mt-4">
+        <a href="mailto:support@isrscotland.com" class="underline hover:text-blue-300">support@isrscotland.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

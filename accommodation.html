@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accommodation – ISR Scotland</title>
+  <meta name="description" content="Find safe and affordable student housing in Scotland – university halls, private rentals, homestays.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>body{font-family:'Inter',sans-serif;}</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR (IDENTICAL TO ALL PAGES) -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">ISR Scotland</a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="visa.html" class="text-gray-700 hover:text-blue-600 font-medium">Visa</a>
+          <a href="accommodation.html" class="text-blue-600 font-medium">Accommodation</a>
+          <a href="healthcare.html" class="text-gray-700 hover:text-blue-600 font-medium">Healthcare</a>
+          <a href="jobs.html" class="text-gray-700 hover:text-blue-600 font-medium">Jobs</a>
+          <a href="culture.html" class="text-gray-700 hover:text-blue-600 font-medium">Culture</a>
+          <a href="arrival.html" class="text-gray-700 hover:text-blue-600 font-medium">Arrival</a>
+          <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+      <a href="visa.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visa</a>
+      <a href="accommodation.html" class="block px-4 py-2 text-blue-600 bg-blue-50 font-medium">Accommodation</a>
+      <a href="healthcare.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Healthcare</a>
+      <a href="jobs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jobs</a>
+      <a href="culture.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Culture</a>
+      <a href="arrival.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Arrival</a>
+      <a href="faq.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FAQ</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="bg-gradient-to-r from-green-600 to-green-800 text-white py-20">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-4">Accommodation in Scotland</h1>
+      <p class="text-xl">Find safe, affordable housing in Edinburgh, Glasgow, and beyond.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-5xl mx-auto px-4 py-12">
+
+    <!-- 1. Housing Options -->
+    <section class="mb-16 bg-gradient-to-b from-green-50 to-white py-12 rounded-2xl shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-800">Your Housing Options</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-green-700">University Halls</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">From £400/month. Includes bills, events, security.</p>
+                <a href="https://www.ed.ac.uk/students/living-in-edinburgh/accommodation" target="_blank" class="text-green-600 underline text-xs mt-1 block">Edinburgh Uni →</a>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-green-700">Private Flats</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">£500–£800/month (shared). Use trusted sites.</p>
+                <a href="https://www.rightmove.co.uk/student-accommodation.html" target="_blank" class="text-green-600 underline text-xs mt-1 block">Rightmove →</a>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-green-700">Homestay</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Live with a Scottish family. Great for culture & language.</p>
+                <a href="https://www.homestay.com/united-kingdom/scotland" target="_blank" class="text-green-600 underline text-xs mt-1 block">Homestay.com →</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Student accommodation in Scotland" 
+                 class="w-full h-full min-h-80 object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <p class="text-sm font-medium opacity-90">Photo: Student halls in Edinburgh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Tenancy Tips & Safety -->
+    <section class="mb-16 bg-gradient-to-b from-blue-50 to-white py-12 rounded-2xl shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Tenancy Tips & Safety</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Never Pay Cash</h3>
+                <p class="text-sm text-gray-600">Use bank transfer only for deposits.</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Check Landlord</h3>
+                <p class="text-sm text-gray-600">
+                  Verify on <a href="https://www.landlordregistrationscotland.gov.uk" target="_blank" class="underline text-blue-600">Scottish Landlord Register</a>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Read Contract</h3>
+                <p class="text-sm text-gray-600">
+                  Get help from <a href="https://scotland.shelter.org.uk" target="_blank" class="underline text-blue-600">Shelter Scotland</a>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Take Move-In Photos</h3>
+                <p class="text-sm text-gray-600">Protect your deposit with evidence.</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Avoid Scams</h3>
+                <p class="text-sm text-gray-600">No real landlord asks for gift cards.</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Signing tenancy agreement" 
+                 class="w-full h-full min-h-80 object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <p class="text-sm font-medium opacity-90">Photo: Safe tenancy signing</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 text-center">
+          <span class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-md">
+            Pro Tip: Always meet the landlord in person!
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Guide -->
+    <div class="bg-yellow-50 p-8 rounded-xl text-center mb-12">
+      <h3 class="text-xl font-semibold mb-4">Download Full Housing Guide</h3>
+      <a href="assets/pdfs/accommodation-tips.pdf" download class="inline-flex items-center bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 font-medium">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        Download Accommodation Guide (PDF)
+      </a>
+    </div>
+
+    <!-- External Resources -->
+    <div class="text-center">
+      <p class="text-lg font-medium mb-4">Official Housing Resources</p>
+      <div class="flex justify-center space-x-6 flex-wrap">
+        <a href="https://www.ed.ac.uk/accommodation-services" target="_blank" class="text-green-600 hover:underline">Edinburgh Uni</a>
+        <a href="https://www.gla.ac.uk/myglasgow/accommodation/" target="_blank" class="text-green-600 hover:underline">Glasgow Uni</a>
+        <a href="https://scotland.shelter.org.uk" target="_blank" class="text-green-600 hover:underline">Shelter Scotland</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="mb-2">© 2025 ISR Scotland – All rights reserved.</p>
+      <p class="text-sm">Contact: <a href="mailto:support@isrscotland.com" class="underline">support@isrscotland.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

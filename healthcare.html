@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare – ISR Scotland</title>
+  <meta name="description" content="Free NHS healthcare for international students in Scotland – registration, prescriptions, mental health, emergency contacts.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>body{font-family:'Inter',sans-serif;}</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR (IDENTICAL TO ALL PAGES) -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">ISR Scotland</a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="visa.html" class="text-gray-700 hover:text-blue-600 font-medium">Visa</a>
+          <a href="accommodation.html" class="text-gray-700 hover:text-blue-600 font-medium">Accommodation</a>
+          <a href="healthcare.html" class="text-blue-600 font-medium">Healthcare</a>
+          <a href="jobs.html" class="text-gray-700 hover:text-blue-600 font-medium">Jobs</a>
+          <a href="culture.html" class="text-gray-700 hover:text-blue-600 font-medium">Culture</a>
+          <a href="arrival.html" class="text-gray-700 hover:text-blue-600 font-medium">Arrival</a>
+          <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+      <a href="visa.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visa</a>
+      <a href="accommodation.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Accommodation</a>
+      <a href="healthcare.html" class="block px-4 py-2 text-blue-600 bg-blue-50 font-medium">Healthcare</a>
+      <a href="jobs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jobs</a>
+      <a href="culture.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Culture</a>
+      <a href="arrival.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Arrival</a>
+      <a href="faq.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FAQ</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="bg-gradient-to-r from-teal-600 to-teal-800 text-white py-20">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <div class="text-6xl mb-4">NHS</div>
+      <h1 class="text-5xl font-bold mb-4">NHS & Healthcare in Scotland</h1>
+      <p class="text-xl">Free GP visits, prescriptions, and emergency care for international students.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-5xl mx-auto px-4 py-12">
+
+    <!-- 1. NHS Access Overview -->
+    <section class="mb-16 bg-gradient-to-b from-teal-50 to-white py-12 rounded-2xl shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">Do You Qualify for Free NHS Care?</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-teal-700">YES — If You Paid IHS</h3>
+                <p class="text-sm text-gray-600">£1,035/year in your Student visa fee</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-teal-700">NO — Short-Term Visa</h3>
+                <p class="text-sm text-gray-600">Under 6 months → pay for GP/hospital</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/ba40/live/56ed1800-581d-11f0-960d-e9f1088a89fe.jpg.webp" 
+                 class="w-full h-full min-h-80 object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <p class="text-sm font-medium opacity-90">Photo: NHS Scotland</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 text-center">
+          <a href="https://www.nhsinform.scot/care-support-and-rights/health-rights/access/healthcare-for-overseas-visitors" target="_blank" class="text-teal-600 underline font-medium">NHS Inform – Overseas Visitors →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. How to Register with GP -->
+    <section class="mb-16 bg-gradient-to-b from-blue-50 to-white py-12 rounded-2xl shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">How to Register with a GP</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-shrink-0 w-12 text-4xl text-center">1</div>
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Find a GP</h3>
+                <p class="text-sm text-gray-600">Search by postcode on <a href="https://www.nhsinform.scot/scotlands-service-directory/gp-practices" target="_blank" class="underline text-blue-600">NHS Inform</a></p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-shrink-0 w-12 text-4xl text-center">2</div>
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Bring Documents</h3>
+                <p class="text-sm text-gray-600">Passport, BRP/eVisa, proof of address</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-shrink-0 w-12 text-4xl text-center">3</div>
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-blue-700">Register On-Site</h3>
+                <p class="text-sm text-gray-600">Fill form — get NHS number instantly</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="assets/images/doctor.jpg" 
+                 class="w-full h-full min-h-80 object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <p class="text-sm font-medium opacity-90">Photo: GP registration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. What’s Free in Scotland -->
+    <section class="mb-16 bg-gradient-to-b from-emerald-50 to-white py-12 rounded-2xl shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-800">What’s FREE in Scotland?</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-emerald-700">GP Visits</h3>
+                <p class="text-sm text-gray-600">100% free with NHS number</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-emerald-700">Hospital Care</h3>
+                <p class="text-sm text-gray-600">A&E, surgery, scans</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-emerald-700">Prescriptions</h3>
+                <p class="text-sm text-gray-600">FREE (unlike England)</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-emerald-700">Ambulance</h3>
+                <p class="text-sm text-gray-600">Call 999 — no charge</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="NHS free prescription" 
+                 class="w-full h-full min-h-80 object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <p class="text-sm font-medium opacity-90">Photo: Free prescriptions in Scotland</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 text-center">
+          <span class="inline-block bg-emerald-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-md">
+            Scotland: Prescriptions are FREE for everyone!
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Emergency & Mental Health -->
+    <section class="mb-16 bg-gradient-to-b from-red-50 to-white py-12 rounded-2xl shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-red-800">Emergency & Mental Health</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-red-700">Call 999</h3>
+                <p class="text-sm text-gray-600">Heart attack, stroke, severe injury</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-red-700">Call 111</h3>
+                <p class="text-sm text-gray-600">Non-urgent — NHS 24 (24/7)</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-red-700">Mental Health</h3>
+                <p class="text-sm text-gray-600">
+                  <a href="https://www.samaritans.org" target="_blank" class="underline text-red-700">Samaritans (116 123)</a> • 
+                  <a href="https://breathingspace.scot" target="_blank" class="underline text-red-700">Breathing Space (0800 83 85 87)</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="assets/images/ambulance.jpg" 
+                 class="w-full h-full min-h-80 object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <p class="text-sm font-medium opacity-90">Photo: Emergency care</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Dental & Optical -->
+    <section class="mb-16 bg-gradient-to-b from-purple-50 to-white py-12 rounded-2xl shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-purple-800">Dental & Eye Care</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-purple-700">NHS Dentist</h3>
+                <p class="text-sm text-gray-600">Check-ups ~£20–£50. Register early!</p>
+                <a href="https://www.nhsinform.scot/scotlands-service-directory/dental-services" target="_blank" class="underline text-purple-600 text-xs mt-1 block">Find a dentist →</a>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+              <div class="flex-1">
+                <h3 class="font-bold text-lg text-purple-700">Free Eye Tests</h3>
+                <p class="text-sm text-gray-600">For full-time students (Scotland only)</p>
+                <a href="https://www.nhsinform.scot/tests-and-treatments/eye-tests" target="_blank" class="underline text-purple-600 text-xs mt-1 block">Eligibility →</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <img src="assets/images/dental.jpg" 
+                 class="w-full h-full min-h-80 object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <p class="text-sm font-medium opacity-90">Photo: NHS dental care</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Guide -->
+    <div class="bg-teal-50 p-8 rounded-xl text-center mb-12">
+      <h3 class="text-xl font-semibold mb-4">Download NHS Scotland Guide</h3>
+      <a href="assets/pdfs/health-guide.pdf" download class="inline-flex items-center bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 font-medium">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        Download Healthcare Guide (PDF)
+      </a>
+    </div>
+
+    <!-- External Resources -->
+    <div class="text-center">
+      <p class="text-lg font-medium mb-4">Official Resources</p>
+      <div class="flex justify-center space-x-6 flex-wrap">
+        <a href="https://www.nhsinform.scot" target="_blank" class="text-teal-600 hover:underline">NHS Inform</a>
+        <a href="https://www.nhs.uk/using-the-nhs/help-with-health-costs/" target="_blank" class="text-teal-600 hover:underline">NHS Help with Costs</a>
+        <a href="https://www.gov.uk/guidance/nhs-entitlements-migrant-health-guide" target="_blank" class="text-teal-600 hover:underline">UK Gov Migrant Guide</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="mb-2">© 2025 ISR Scotland – All rights reserved.</p>
+      <p class="text-sm">Contact: <a href="mailto:support@isrscotland.com" class="underline">support@isrscotland.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

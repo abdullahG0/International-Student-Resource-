@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Checklist – ISR Scotland</title>
+  <meta name="description" content="Complete printable checklist for international students in Scotland – visa, housing, NHS, jobs, arrival.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    @media print {
+      .no-print { display: none; }
+      body { background: white; color: black; }
+      .checklist-item { border-bottom: 1px solid #ccc; padding-bottom: 8px; margin-bottom: 8px; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR (same as home) -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">ISR Scotland</a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="visa.html" class="text-gray-700 hover:text-blue-600 font-medium">Visa</a>
+          <a href="accommodation.html" class="text-gray-700 hover:text-blue-600 font-medium">Accommodation</a>
+          <a href="healthcare.html" class="text-gray-700 hover:text-blue-600 font-medium">Healthcare</a>
+          <a href="jobs.html" class="text-gray-700 hover:text-blue-600 font-medium">Jobs</a>
+          <a href="culture.html" class="text-gray-700 hover:text-blue-600 font-medium">Culture</a>
+          <a href="arrival.html" class="text-gray-700 hover:text-blue-600 font-medium">Arrival</a>
+          <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
+          <a href="checklist.html" class="text-blue-600 font-bold">Checklist</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+      <a href="visa.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visa</a>
+      <a href="accommodation.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Accommodation</a>
+      <a href="healthcare.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Healthcare</a>
+      <a href="jobs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jobs</a>
+      <a href="culture.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Culture</a>
+      <a href="arrival.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Arrival</a>
+      <a href="faq.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FAQ</a>
+      <a href="checklist.html" class="block px-4 py-2 text-blue-600 bg-blue-50 font-bold">Checklist</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-b from-blue-50 to-white py-20 text-center">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 text-blue-800">
+        Ultimate Scotland Checklist
+      </h1>
+      <p class="text-xl mb-8 text-gray-700">Tick every step. Print. Save. Share.</p>
+      <div class="flex justify-center gap-4 no-print">
+        <button onclick="window.print()" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg flex items-center">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+          Print / Save as PDF
+        </button>
+        <a href="index.html" class="bg-gray-600 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg">
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL CHECKLIST -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 space-y-12">
+
+      <!-- VISA -->
+      <div class="border-l-4 border-blue-600 pl-6">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 flex items-center">
+          <span class="mr-3 text-3xl">Passport</span> Visa & Immigration
+        </h2>
+        <div class="space-y-3 text-lg checklist-item">
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> CAS received from university</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> IHS paid (£1,035/year)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Financial proof: £845 × 9 months in bank (28 days)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> TB test certificate (if required)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Biometrics appointment booked</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> eVisa received (digital)</label>
+        </div>
+      </div>
+
+      <!-- ACCOMMODATION -->
+      <div class="border-l-4 border-green-600 pl-6">
+        <h2 class="text-2xl font-bold text-green-700 mb-4 flex items-center">
+          <span class="mr-3 text-3xl">Home</span> Accommodation
+        </h2>
+        <div class="space-y-3 text-lg checklist-item">
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Applied for university halls</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Viewed private flat in person</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Landlord registered (landlordregistrationscotland.gov.uk)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Tenancy agreement signed</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Deposit paid & protected (within 30 days)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Move-in photos taken</label>
+        </div>
+      </div>
+
+      <!-- HEALTHCARE -->
+      <div class="border-l-4 border-teal-600 pl-6">
+        <h2 class="text-2xl font-bold text-teal-700 mb-4 flex items-center">
+          <span class="mr-3 text-3xl">NHS</span> Healthcare & NHS
+        </h2>
+        <div class="space-y-3 text-lg checklist-item">
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> GP registered (bring BRP + proof of address)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> NHS number received</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Know emergency: 999 | Non-emergency: 111</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Mental health support saved (Breathing Space: 0800 83 85 87)</label>
+        </div>
+      </div>
+
+      <!-- JOBS -->
+      <div class="border-l-4 border-yellow-600 pl-6">
+        <h2 class="text-2xl font-bold text-yellow-700 mb-4 flex items-center">
+          <span class="mr-3 text-3xl">Briefcase</span> Part-Time Jobs
+        </h2>
+        <div class="space-y-3 text-lg checklist-item">
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> UK-style CV ready (2 pages max)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Applied to Costa / Tesco / Amazon</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Bank account opened (bring BRP)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Know 20-hour rule (term time)</label>
+        </div>
+      </div>
+
+      <!-- CULTURE -->
+      <div class="border-l-4 border-purple-600 pl-6">
+        <h2 class="text-2xl font-bold text-purple-700 mb-4 flex items-center">
+          <span class="mr-3 text-3xl">Bagpipes</span> Culture & Lifestyle
+        </h2>
+        <div class="space-y-3 text-lg checklist-item">
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Young Scot Card applied (free buses under 22)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> UNiDAYS / Student Beans account</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> 16–25 Railcard purchased</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Know cheap eats: Greggs, Lidl, Aldi</label>
+        </div>
+      </div>
+
+      <!-- ARRIVAL -->
+      <div class="border-l-4 border-red-600 pl-6">
+        <h2 class="text-2xl font-bold text-red-700 mb-4 flex items-center">
+          <span class="mr-3 text-3xl">Airplane</span> Arrival (First 48 Hours)
+        </h2>
+        <div class="space-y-3 text-lg checklist-item">
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> SIM card bought (£10 EE/Vodafone)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> BRP collected at Post Office (within 10 days)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> Police registration done (if required)</label>
+          <label class="flex items-center"><input type="checkbox" class="mr-3 w-5 h-5"> University orientation attended</label>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRINT BUTTON (bottom) -->
+  <div class="text-center py-12 no-print">
+    <button onclick="window.print()" class="bg-green-600 hover:bg-green-700 text-white px-12 py-5 rounded-lg font-bold text-xl shadow-2xl">
+      Print This Checklist
+    </button>
+    <p class="mt-4 text-sm text-gray-600">Prints perfectly on 2 pages • Save as PDF on phone</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-12 text-center">
+    <p class="text-xl font-bold">ISR Scotland</p>
+    <p class="text-sm mt-2">© 2025 – support@isrscotland.com</p>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
