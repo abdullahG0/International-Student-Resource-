@@ -18,39 +18,55 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- NAVBAR (same as home) -->
-  <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <a href="index.html" class="text-2xl font-bold text-blue-600">ISR Scotland</a>
-        <div class="hidden md:flex space-x-6">
-          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-          <a href="visa.html" class="text-gray-700 hover:text-blue-600 font-medium">Visa</a>
-          <a href="accommodation.html" class="text-gray-700 hover:text-blue-600 font-medium">Accommodation</a>
-          <a href="healthcare.html" class="text-gray-700 hover:text-blue-600 font-medium">Healthcare</a>
-          <a href="jobs.html" class="text-gray-700 hover:text-blue-600 font-medium">Jobs</a>
-          <a href="culture.html" class="text-gray-700 hover:text-blue-600 font-medium">Culture</a>
-          <a href="arrival.html" class="text-gray-700 hover:text-blue-600 font-medium">Arrival</a>
-          <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
-          <a href="checklist.html" class="text-blue-600 font-bold">Checklist</a>
-        </div>
-        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
+<!-- NAVBAR – LOGO CENTERED ABOVE MENU -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Logo + Menu Container -->
+    <div class="flex flex-col items-center py-3">
+      
+      <!-- LOGO (centered) -->
+      <a href="index.html" class="mb-3">
+        <h1 class="text-3xl font-bold text-blue-600 tracking-tight">
+          ISR Scotland
+        </h1>
+      </a>
+      
+      <!-- Desktop Menu (centered below logo) -->
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-blue-600 font-semibold hover:text-blue-800 transition">Home</a>
+        <a href="visa.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Visa</a>
+        <a href="accommodation.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Accommodation</a>
+        <a href="healthcare.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Healthcare</a>
+        <a href="jobs.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Jobs</a>
+        <a href="culture.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Culture</a>
+        <a href="arrival.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Arrival</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-600 font-medium transition">FAQ</a>
       </div>
+
+      <!-- Mobile Hamburger Button (centered) -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 mt-2">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-      <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
-      <a href="visa.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visa</a>
-      <a href="accommodation.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Accommodation</a>
-      <a href="healthcare.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Healthcare</a>
-      <a href="jobs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Jobs</a>
-      <a href="culture.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Culture</a>
-      <a href="arrival.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Arrival</a>
-      <a href="faq.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FAQ</a>
-      <a href="checklist.html" class="block px-4 py-2 text-blue-600 bg-blue-50 font-bold">Checklist</a>
+  </div>
+
+  <!-- Mobile Dropdown Menu (centered) -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <div class="px-4 py-4 space-y-2 text-center">
+      <a href="index.html" class="block py-2 text-blue-600 font-semibold">Home</a>
+      <a href="visa.html" class="block py-2 text-gray-700 hover:bg-gray-100 rounded">Visa</a>
+      <a href="accommodation.html" class="block py-2 text-gray-700 hover:bg-gray-100 rounded">Accommodation</a>
+      <a href="healthcare.html" class="block py-2 text-gray-700 hover:bg-gray-100 rounded">Healthcare</a>
+      <a href="jobs.html" class="block py-2 text-gray-700 hover:bg-gray-100 rounded">Jobs</a>
+      <a href="culture.html" class="block py-2 text-gray-700 hover:bg-gray-100 rounded">Culture</a>
+      <a href="arrival.html" class="block py-2 text-gray-700 hover:bg-gray-100 rounded">Arrival</a>
+      <a href="faq.html" class="block py-2 text-gray-700 hover:bg-gray-100 rounded">FAQ</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- HERO -->
   <section class="bg-gradient-to-b from-blue-50 to-white py-20 text-center">
@@ -168,10 +184,15 @@
     <p class="mt-4 text-sm text-gray-600">Prints perfectly on 2 pages • Save as PDF on phone</p>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-800 text-white py-12 text-center">
-    <p class="text-xl font-bold">ISR Scotland</p>
-    <p class="text-sm mt-2">© 2025 – support@isrscotland.com</p>
+  <!-- FOOTER (identical to homepage) -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-2xl font-bold mb-2">ISR Scotland</p>
+      <p class="text-sm">© 2025 ISR Scotland – All rights reserved.</p>
+      <p class="text-sm mt-4">
+        <a href="mailto:support@isrscotland.com" class="underline hover:text-blue-300">support@isrscotland.com</a>
+      </p>
+    </div>
   </footer>
 
   <!-- Mobile Menu Script -->
